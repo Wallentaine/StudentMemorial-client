@@ -1,0 +1,43 @@
+.Auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.auth__modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: white;
+    border-radius: 6px;
+    width: 400px;
+    border: 1px solid #a1d4e2;
+}
+
+.auth__title {
+    margin-bottom: 20px;
+}
+
+.auth__isSet__account {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth__isSet__account button {
+    padding: 4px;
+    margin-left: 10px;
+    border: none;
+    background: white;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.auth__isSet__account button:hover {
+    color: #a1d4e2;
+}

@@ -1,0 +1,12 @@
+.AuthButton {
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    background: white;
+    border: 2px solid #a1d4e2;
+}
+.AuthButton:hover {
+    background: #a1d4e2;
+    color: white;
+}

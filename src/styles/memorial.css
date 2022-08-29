@@ -1,0 +1,51 @@
+.Memorials {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 100px;
+    display: grid;
+    grid-row-gap: 60px;
+    justify-content: center;
+}
+
+.memorial__item__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.memorial__item__link {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.memorial__item__link:hover {
+    text-decoration: underline;
+}
+
+.memorial__item__custom__head {
+    width: 32px;
+    height: 32px;;
+    margin-bottom: 4px;
+}
+.memorial__item__custom__head img {
+    width: 32px;
+    height: 32px;
+}
+
+.memorial__item {
+    width: 41px;
+    height: 64px;
+    background: url("../assets/images/memorial--sprite--v2.png") no-repeat;
+}
+
+.memorial__item__nameTag {
+
+}
+
+.memorial__item__date {
+    margin-top: 4px;
+}

@@ -1,0 +1,6 @@
+export const MAIN_ROUTE = '/'
+export const MEMORIALS_ROUTE = '/memorials'
+export const MEMORIAL_ROUTE = '/memorials'
+export const AUTH_ROUTE = '/auth'
+export const ERROR_ROUTE = '/error'
+export const USER_MEMORIAL_ROUTE = '/user'

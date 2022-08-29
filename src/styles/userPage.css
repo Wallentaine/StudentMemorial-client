@@ -1,0 +1,85 @@
+.UserPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.userPage__memorial__redactor {
+
+}
+
+.userPage__memorial__redactor__windows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.userPage__redactor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-right: 10px;
+    width: 300px;
+    border: 2px solid #a1d4e2;
+    background: white;
+}
+
+.userPage__redactor__title {
+    margin-bottom: 40px;
+}
+
+.userPage__redactor__window {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #a1d4e2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.userPage__redactor__window__img__header {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 2px;
+}
+
+.userPage__redactor__window__img {
+    width: 41px;
+    height: 64px;
+    background: url("../assets/images/memorial--sprite--v2.png") no-repeat;
+}
+
+.userPage__redactor__select {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.userPage__redactor__button {
+    align-self: flex-end;
+}
+
+.userPage__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-left: 10px;
+    min-width: 300px;
+    border: 2px solid #a1d4e2;
+    background: white;
+}
+
+.userPage__form__title {
+    margin-bottom: 40px;
+}
