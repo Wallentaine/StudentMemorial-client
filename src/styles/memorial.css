@@ -40,6 +40,7 @@
     width: 41px;
     height: 64px;
     background: url("../assets/images/memorial--sprite--v2.png") no-repeat;
+    margin-bottom: 4px;
 }
 
 .memorial__item__nameTag {
