@@ -10,6 +10,7 @@ import Error from "../pages/Error"
 import Memorial from "../pages/Memorial"
 import Auth from "../pages/Auth"
 import UserPage from "../pages/UserPage"
+import MemorialPage from "../pages/MemorialPage"
 
 export const unauthorizedRoutes = [
     {
@@ -36,7 +37,7 @@ export const publicRoutes = [
     },
     {
         path: MEMORIAL_ROUTE + '/:id',
-        Component: Memorial
+        Component: MemorialPage
     },
     {
         path: ERROR_ROUTE,

@@ -3,8 +3,9 @@ import '../styles/userPage.css'
 import AuthButton from "../components/UI/buttons/AuthButton"
 import AuthInput from "../components/UI/inputs/AuthInput"
 import UserPageMemorialRedactor from "../components/UserPageMemorialRedactor"
+import {observer} from "mobx-react-lite"
 
-const UserPage = () => {
+const UserPage = observer(() => {
 
     return (
         <div className="UserPage">
@@ -21,6 +22,6 @@ const UserPage = () => {
             </div>
         </div>
     )
-}
+})
 
 export default UserPage

@@ -16,7 +16,7 @@ const MemorialItem = ({memorial}) => {
                 </div>
                 <div className="memorial__item"></div>
                 <div className="memorial__item__nameTag">
-                    {memorial.description}
+                    {memorial.name}
                 </div>
                 <div className="memorial__item__date">
                     {memorialDate}

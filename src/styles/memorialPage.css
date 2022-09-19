@@ -1,0 +1,107 @@
+.MemorialPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.memorialPage__allData {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.memorialPage__fullName {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #a1d4e2;
+}
+
+.memorialPage__date {
+    padding: 4px;
+    border-left: 2px solid #a1d4e2;
+    border-right: 2px solid #a1d4e2;
+}
+
+.memorialPage__info {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.memorialPage__memorial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    border: 2px solid #a1d4e2;
+    padding: 20px;
+}
+
+.memorialPage__memorial__head {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 2px;
+}
+
+.memorialPage__memorial__img {
+    width: 41px;
+    height: 64px;
+    background: url("../assets/images/memorial--sprite--v2.png") no-repeat;
+}
+
+.memorialPage__description {
+    padding: 20px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #a1d4e2;
+
+}
+
+.memorialPage__description__title {
+    font-size: 20px;
+}
+
+.memorialPage__description__text {
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+
+.memorialPage__comments {
+    width: 800px;
+}
+
+.memorialPage__comments__form {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.memorialPage__comment {
+    margin-bottom: 20px;
+}
+
+.memorialPage__comment__title {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.memorialPage__comment__text {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.memorialPage__comment__divideLine {
+    width: 100%;
+    height: 2px;
+    background: #a1d4e2;
+}
