@@ -5,7 +5,6 @@ export const fetchMemorials = async () => {
     return data
 }
 
-
 export const fetchOneMemorial = async (id) => {
     const {data} = await $host.get('api/memorial/' + id)
     return data

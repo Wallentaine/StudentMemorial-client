@@ -12,10 +12,10 @@ const AppRouter = observer(() => {
 
     return (
         <Routes>
-            {!user.isAuth && unauthorizedRoutes.map(({path, Component}) =>
+            {user.isAuth && privateRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} element={<Component/>}/>
             )}
-            {user.isAuth && privateRoutes.map(({path, Component}) =>
+            {!user.isAuth && unauthorizedRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} element={<Component/>}/>
             )}
             {publicRoutes.map(({path, Component}) =>
