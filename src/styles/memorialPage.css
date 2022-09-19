@@ -19,12 +19,14 @@
     padding: 10px;
     width: 100%;
     border: 2px solid #a1d4e2;
+    background: white;
 }
 
 .memorialPage__date {
     padding: 4px;
     border-left: 2px solid #a1d4e2;
     border-right: 2px solid #a1d4e2;
+    background: white;
 }
 
 .memorialPage__info {
@@ -43,6 +45,7 @@
     width: 150px;
     border: 2px solid #a1d4e2;
     padding: 20px;
+    background: white;
 }
 
 .memorialPage__memorial__head {
@@ -64,6 +67,7 @@
     flex-direction: column;
     align-items: center;
     border: 2px solid #a1d4e2;
+    background: white;
 
 }
 

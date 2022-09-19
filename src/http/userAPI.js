@@ -20,3 +20,4 @@ export const check = async() => {
         return jwt_decode(data.token)
     }
 }
+

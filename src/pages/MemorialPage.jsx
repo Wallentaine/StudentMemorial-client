@@ -15,11 +15,9 @@ const MemorialPage = () => {
         fetchOneMemorial(id).then(data => setMemorial(data))
     }, [])
 
-    const memorialDate = new Date(memorial.date).toLocaleDateString()
-
     return (
         <div className="MemorialPage">
-            <MemorialData/>
+            <MemorialData memorial={memorial}/>
             <MemorialComments/>
         </div>
     )

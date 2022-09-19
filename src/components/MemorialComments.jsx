@@ -1,12 +1,25 @@
-import React, {useContext} from 'react'
+import React, {useContext, useState, useEffect} from 'react'
 import CommentTextarea from "./UI/inputs/CommentTextarea"
 import AuthButton from "./UI/buttons/AuthButton"
-import {observer} from "mobx-react-lite"
 import {Context} from "../index"
+import {useParams} from "react-router-dom";
+import {fetchCommentsById} from "../http/commentsAPI";
 
-const MemorialComments = observer(() => {
+const MemorialComments = () => {
 
     const {user} = useContext(Context)
+
+    const {id} = useParams()
+
+    const [comments, setComments] = useState([])
+
+
+
+    useEffect(() => {
+        fetchCommentsById(id).then(data => setComments(data))
+    }, [])
+
+    console.log(comments)
 
     return (
         <div className="memorialPage__comments">
@@ -16,18 +29,16 @@ const MemorialComments = observer(() => {
                     <AuthButton>Отправить пожелание</AuthButton>
                 </div>
             }
-            <div className="memorialPage__comment">
-                <div className="memorialPage__comment__title">Колесниченко Алексей Владимирович</div>
-                <div className="memorialPage__comment__divideLine"></div>
-                <div className="memorialPage__comment__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis,
-                    cupiditate debitis deleniti eius et ex facere, fugit harum id illo iste nostrum
-                    omnis praesentium quisquam similique tenetur veritatis vitae.
+            {comments.map(item =>
+                <div className="memorialPage__comment">
+                    <div className="memorialPage__comment__title"></div>
+                    <div className="memorialPage__comment__divideLine"></div>
+                    <div className="memorialPage__comment__text">{item.message}</div>
+                    <div className="memorialPage__comment__divideLine"></div>
                 </div>
-                <div className="memorialPage__comment__divideLine"></div>
-            </div>
+            )}
         </div>
     )
-})
+}
 
 export default MemorialComments
