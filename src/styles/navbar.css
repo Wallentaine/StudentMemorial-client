@@ -37,3 +37,16 @@
     height: 4px;
     background: #f3eed8;
 }
+
+
+@media (max-width: 1912px) and (min-width: 1302px){
+
+}
+@media (max-width: 1302px){
+    .navbar__logo {
+        display: none;
+    }
+}
+@media (max-width: 604px){
+
+}

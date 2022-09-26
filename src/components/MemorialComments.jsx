@@ -1,42 +1,36 @@
 import React, {useContext, useState, useEffect} from 'react'
-import CommentTextarea from "./UI/inputs/CommentTextarea"
-import AuthButton from "./UI/buttons/AuthButton"
 import {Context} from "../index"
-import {useParams} from "react-router-dom";
-import {fetchCommentsById} from "../http/commentsAPI";
+import {fetchCommentsById} from "../http/commentsAPI"
+import Spinner from "./UI/loaders/Spinner"
+import CommentItem from "./CommentItem"
+import CommentForm from "./CommentForm"
 
-const MemorialComments = () => {
+const MemorialComments = ({...props}) => {
 
     const {user} = useContext(Context)
 
-    const {id} = useParams()
+    const [loading, setLoading] = useState(true)
 
     const [comments, setComments] = useState([])
 
-
-
     useEffect(() => {
-        fetchCommentsById(id).then(data => setComments(data))
+        fetchCommentsById(props.id).then(data => setComments(data)).finally(() => setLoading(false))
     }, [])
 
-    console.log(comments)
+    if (loading) return <div className="memorialPage__comments"><Spinner/></div>
 
     return (
         <div className="memorialPage__comments">
-            {user.isAuth &&
-                <div className="memorialPage__comments__form">
-                    <CommentTextarea placeholder='Введите пожелание...'></CommentTextarea>
-                    <AuthButton>Отправить пожелание</AuthButton>
-                </div>
+            <div className="memorialPage__comments__title">Пожелания</div>
+
+            {user.isAuth && (user.user.id !== props.memorial.userId) && !comments.find((item) => item.userId === user.user.id) &&
+                <CommentForm comments={comments} setComments={setComments} memorial={props.memorial}/>
             }
+
             {comments.map(item =>
-                <div className="memorialPage__comment">
-                    <div className="memorialPage__comment__title"></div>
-                    <div className="memorialPage__comment__divideLine"></div>
-                    <div className="memorialPage__comment__text">{item.message}</div>
-                    <div className="memorialPage__comment__divideLine"></div>
-                </div>
+                <CommentItem key={item.id} message={item.message}/>
             )}
+
         </div>
     )
 }

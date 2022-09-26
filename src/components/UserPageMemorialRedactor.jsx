@@ -26,7 +26,14 @@ const UserPageMemorialRedactor = () => {
             </div>
             <div className="userPage__redactor__select">
                 {memorialCustomHeaders.map(({path, name}) =>
-                    <MemorialHeaderInput key={name} id={name} name="memorialCustomHead" value={name} path={path} selectMemorialHeader={selectMemorialHeader}/>
+                    <MemorialHeaderInput
+                        key={name}
+                        id={name}
+                        name="memorialCustomHead"
+                        value={name}
+                        path={path}
+                        selectMemorialHeader={selectMemorialHeader}
+                    />
                 )}
             </div>
         </div>

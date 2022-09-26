@@ -1,8 +1,17 @@
 .Memorials {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 100px;
-    display: grid;
     grid-row-gap: 60px;
+    grid-column-gap: 60px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.loader {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -49,4 +58,20 @@
 
 .memorial__item__date {
     margin-top: 4px;
+}
+
+@media (max-width: 1912px) and (min-width: 1302px){
+    .Memorials {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 1302px){
+    .Memorials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 604px){
+    .Memorials {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
