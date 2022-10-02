@@ -38,6 +38,28 @@
     background: #f3eed8;
 }
 
+.searchedBlock {
+    width: 30%;
+    position: fixed;
+    background: white;
+    z-index: 9999;
+    border: 2px solid #a1d4e2;
+}
+
+.searchedBlock a {
+    text-decoration: none;
+    color: black;
+}
+
+.searchedItem {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.searchedItem:hover {
+    color: white;
+    background: #a1d4e2;
+}
 
 @media (max-width: 1912px) and (min-width: 1302px){
 

@@ -15,7 +15,7 @@ const MemorialComments = ({...props}) => {
 
     useEffect(() => {
         fetchCommentsById(props.id).then(data => setComments(data)).finally(() => setLoading(false))
-    }, [])
+    }, [props.id])
 
     if (loading) return <div className="memorialPage__comments"><Spinner/></div>
 

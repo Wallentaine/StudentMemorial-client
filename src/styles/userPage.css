@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 80px;
+    padding: 20px;
 }
 
 .userPage__memorial__redactor {
@@ -14,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    column-gap: 20px;
 }
 
 
@@ -23,10 +25,9 @@
     align-items: center;
     box-sizing: border-box;
     padding: 20px;
-    margin-right: 10px;
-    width: 300px;
     border: 2px solid #a1d4e2;
     background: white;
+    width: 100%;
 }
 
 .userPage__redactor__title {
@@ -74,12 +75,34 @@
     align-items: center;
     box-sizing: border-box;
     padding: 20px;
-    margin-left: 10px;
-    min-width: 300px;
     border: 2px solid #a1d4e2;
     background: white;
+    width: 100%;
 }
 
 .userPage__form__title {
     margin-bottom: 40px;
+}
+
+.userPage__description {
+    width: 100%;
+    color: gray;
+    font-size: 14px;
+}
+
+.userPage__form__desc {
+    margin: 10px 0;
+}
+
+@media (max-width: 1912px) and (min-width: 1302px){
+
+}
+@media (max-width: 1302px){
+    .userPage__memorial__redactor__windows {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+@media (max-width: 604px){
+
 }

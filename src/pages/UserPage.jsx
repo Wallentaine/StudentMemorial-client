@@ -38,17 +38,7 @@ const UserPage = observer(() => {
     } else {
         return (
             <div className="UserPage">
-                <div className="userPage__memorial__redactor">
-                    <div className="userPage__memorial__redactor__windows">
-                        <UserPageMemorialRedactor/>
-                        <div className="userPage__form">
-                            <div className="userPage__form__title">Личные данные</div>
-                            <AuthInput type="text" placeholder="Введите ФИО"/>
-                            <AuthInput type="date"/>
-                        </div>
-                    </div>
-                    <AuthButton>Сохранить</AuthButton>
-                </div>
+                <UserPageMemorialRedactor/>
             </div>
         )
     }

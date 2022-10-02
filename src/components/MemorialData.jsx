@@ -1,5 +1,4 @@
 import React from 'react'
-import dgtu from "../assets/images/dgtu.png"
 
 const MemorialData = ({...props}) => {
 
@@ -11,7 +10,7 @@ const MemorialData = ({...props}) => {
             <div className="memorialPage__date">{memorialDate}</div>
             <div className="memorialPage__info">
                 <div className="memorialPage__memorial">
-                    <div className="memorialPage__memorial__head"><img src={dgtu} alt=""/></div>
+                    <div className="memorialPage__memorial__head"><img src={props.memorial.form} alt=""/></div>
                     <div className="memorialPage__memorial__img"></div>
                 </div>
                 <div className="memorialPage__description">

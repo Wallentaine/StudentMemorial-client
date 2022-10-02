@@ -1,0 +1,8 @@
+.CommonTextarea {
+    resize: vertical;
+    width: 100%;
+    min-height: 40px;
+    padding: 5px;
+    border: 2px solid #a1d4e2;
+    outline: none;
+}

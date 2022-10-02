@@ -4,7 +4,7 @@ import MemorialData from "../components/MemorialData"
 import MemorialComments from "../components/MemorialComments"
 import {useParams} from "react-router-dom"
 import {fetchOneMemorial} from "../http/memorialAPI"
-import Spinner from "../components/UI/loaders/Spinner";
+import Spinner from "../components/UI/loaders/Spinner"
 
 const MemorialPage = () => {
 
@@ -15,8 +15,10 @@ const MemorialPage = () => {
     const {id} = useParams()
 
     useEffect(() => {
-        fetchOneMemorial(id).then(data => setMemorial(data)).finally(() => setLoading(false))
-    }, [])
+        fetchOneMemorial(id).
+        then(data => setMemorial(data)).
+        finally(() => setLoading(false))
+    }, [id])
 
     if (loading)
         return <div className="loader"><Spinner/></div>
